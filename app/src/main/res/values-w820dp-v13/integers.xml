@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="app_bg_num_columns">6</integer>
+    <integer name="num_columns">3</integer>
+    <integer name="rg_pac_item_margin">5</integer>
+    <integer name="theme_bg_num_columns">5</integer>
+    <integer name="top_bar_img_height">45</integer>
+    <integer name="top_bar_img_padding_hor">30</integer>
+    <integer name="top_bar_img_padding_ver">15</integer>
+    <integer name="top_bar_img_width">45</integer>
+    <integer name="top_bar_rg_margin">8</integer>
+</resources>

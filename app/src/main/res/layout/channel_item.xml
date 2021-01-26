@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/channel_item_padding_top" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@id/channel_icon"
+        android:layout_width="@dimen/channel_img_width"
+        android:layout_height="@dimen/channel_img_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/channel_icon" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/channel_icon" android:layout_alignParentLeft="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/fav" android:visibility="visible" android:layout_width="@dimen/fav_img_width" android:layout_height="@dimen/fav_img_height" android:src="@drawable/fav3" />
+        <TextView android:textSize="@dimen/channel_name_size" android:textColor="@color/active_color" android:ellipsize="marquee" android:gravity="center" android:id="@id/channel_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="MBC1" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+</RelativeLayout>

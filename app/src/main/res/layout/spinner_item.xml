@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="@dimen/spn_width" android:layout_height="@dimen/spn_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ffef6330" android:gravity="center" android:id="@id/txtSpinnerItem" android:layout_width="fill_parent" android:layout_height="@dimen/spn_height" android:singleLine="true" />
+</FrameLayout>

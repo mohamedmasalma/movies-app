@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@mipmap/play_controler_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SeekBar android:id="@id/pro_seekbar" android:background="@mipmap/play_seekbar_bg" android:paddingLeft="@dimen/sb_padding_left" android:paddingRight="@dimen/sb_padding_right" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="369.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/sb_margin_left" android:max="100" android:indeterminate="false" android:progressDrawable="@drawable/seekbar_style" android:thumb="@mipmap/play_hk" />
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lny_control_margin_left" android:layout_marginRight="@dimen/lny_control_margin_right">
+        <TextView android:textSize="@dimen/tv_control_vod_name_size" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/text_vod_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tv_control_vod_name_margin_left" android:text="MBC MOVIE" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="bottom|center" android:id="@id/playbut" android:background="@drawable/media_pause" android:nextFocusUp="@id/playbut" android:layout_width="@dimen/ib_control_width" android:layout_height="@dimen/ib_control_height" android:layout_marginBottom="@dimen/ib_control_margin_bottom" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/tv_control_time_size" android:textColor="@color/radio_button_check" android:layout_gravity="center_vertical" android:id="@id/play_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tv_control_play_time_margin_left" android:text="@string/duration" />
+        <TextView android:textSize="@dimen/tv_control_play_line_size" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tv_control_play_line_margin_left" android:text="/" />
+        <TextView android:textSize="@dimen/tv_control_time_size" android:layout_gravity="center_vertical" android:id="@id/total_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tv_control_total_time_margin_left" android:layout_marginRight="@dimen/tv_control_total_time_margin_right" android:text="@string/duration" />
+    </LinearLayout>
+</LinearLayout>

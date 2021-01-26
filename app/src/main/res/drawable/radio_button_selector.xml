@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_checked="false" android:state_pressed="false">
+        <shape>
+            <gradient android:startColor="@color/radio_button_normal" android:endColor="@color/radio_button_normal" android:angle="270.0" />
+            <stroke android:width="2.0sp" android:color="@color/list_item_focus_stroke" />
+            <corners android:topLeftRadius="5.0dip" android:topRightRadius="5.0dip" android:bottomLeftRadius="5.0dip" android:bottomRightRadius="5.0dip" />
+            <padding android:left="5.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="5.0dip" />
+        </shape>
+    </item>
+    <item android:state_focused="true" android:state_checked="true" android:state_pressed="false">
+        <shape>
+            <gradient android:startColor="@color/radio_button_full_bg" android:endColor="@color/radio_button_stroke_bg" android:angle="270.0" />
+            <stroke android:width="1.0sp" android:color="@color/radio_button_stroke_bg" />
+            <corners android:topLeftRadius="5.0dip" android:topRightRadius="5.0dip" android:bottomLeftRadius="5.0dip" android:bottomRightRadius="5.0dip" />
+            <padding android:left="5.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="5.0dip" />
+        </shape>
+    </item>
+    <item android:state_focused="false" android:state_checked="true" android:state_pressed="false">
+        <shape>
+            <gradient android:startColor="@color/radio_button_normal" android:endColor="@color/radio_button_normal" android:angle="270.0" />
+            <stroke android:width="1.0sp" android:color="@color/radio_button_check" />
+            <corners android:topLeftRadius="5.0dip" android:topRightRadius="5.0dip" android:bottomLeftRadius="5.0dip" android:bottomRightRadius="5.0dip" />
+            <padding android:left="5.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="5.0dip" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:startColor="@color/radio_button_pressed" android:endColor="@color/radio_button_pressed" android:angle="270.0" />
+            <stroke android:width="1.0sp" android:color="@color/radio_button_pressed" />
+            <corners android:topLeftRadius="5.0dip" android:topRightRadius="5.0dip" android:bottomLeftRadius="5.0dip" android:bottomRightRadius="5.0dip" />
+            <padding android:left="5.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="5.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient android:startColor="@color/radio_button_normal" android:endColor="@color/radio_button_normal" android:angle="270.0" />
+            <stroke android:width="1.0sp" android:color="@color/radio_button_normal" />
+            <corners android:topLeftRadius="5.0dip" android:topRightRadius="5.0dip" android:bottomLeftRadius="5.0dip" android:bottomRightRadius="5.0dip" />
+            <padding android:left="5.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="5.0dip" />
+        </shape>
+    </item>
+</selector>

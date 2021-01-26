@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/activate_bg" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/mainbg" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <ImageView android:layout_gravity="center" android:id="@id/logo" android:background="@drawable/app_logo" android:layout_width="@dimen/logo_width" android:layout_height="@dimen/logo_height" android:scaleType="centerInside" android:contentDescription="" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/lny_padding_left" android:paddingRight="@dimen/lny_padding_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lny_activate" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/lny_margin_bottom">
+                <TextView android:textSize="@dimen/activate_msg_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_activate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tv_msg_margin_bottom" android:text="@string/welcome" />
+                <TextView android:textSize="@dimen/activate_msg_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/app_version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tv_msg_margin_bottom" android:text="@string/welcome" />
+                <EditText android:textSize="@dimen/activate_msg_size" android:id="@id/edt_input_code" android:padding="@dimen/rg_pw_pac_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/edt_code_margin_left" android:layout_marginRight="@dimen/edt_code_margin_right" android:hint="@string/activate_username" />
+                <EditText android:textSize="@dimen/activate_msg_size" android:id="@id/edt_input_password" android:padding="@dimen/rg_pw_pac_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/edt_code_margin_left" android:layout_marginRight="@dimen/edt_code_margin_right" android:hint="@string/activate_password" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/lny_padding_left" android:paddingRight="@dimen/lny_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="@dimen/activate_btn_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/activate_reset" android:background="@drawable/main_but_select" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/activate_btn_height" android:text="@string/reset" android:layout_weight="2.0" />
+                <Button android:textSize="@dimen/activate_btn_size" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="right" android:id="@id/activate_enter" android:background="@drawable/main_but_select" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/activate_btn_height" android:layout_marginLeft="@dimen/activate_btn_margin_left" android:text="@string/enter" android:layout_weight="2.0" />
+                <Button android:textSize="@dimen/activate_btn_size" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="right" android:id="@id/settings_btn" android:background="@drawable/main_but_select" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/activate_btn_height" android:layout_marginLeft="@dimen/activate_btn_margin_left" android:text="Settings" android:layout_weight="2.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/loading_common" />
+</FrameLayout>

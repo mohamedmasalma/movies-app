@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_gravity="center" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/scroll_margin_left" android:layout_marginRight="@dimen/scroll_margin_right" android:fillViewport="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/menu_bg1" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_margin="5.0dip">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_setting_version" android:layout_width="130.0dip" android:layout_height="fill_parent" android:text="@string/version" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_value_version" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1.0.0" android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/menu_bg1" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_margin="5.0dip">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_setting_code" android:layout_width="130.0dip" android:layout_height="fill_parent" android:text="@string/activate_username" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_value_code" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="\ 9901010600000000" android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/menu_bg1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_margin="5.0dip">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_setting_password" android:layout_width="130.0dip" android:layout_height="fill_parent" android:text="@string/activate_password" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_value_password" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="\ 9901010600000000" android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/menu_bg1" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_margin="5.0dip">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_setting_expires" android:layout_width="130.0dip" android:layout_height="fill_parent" android:text="@string/expires" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_value_expires" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="ID1:Your code activated until 2016-10-21" android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/menu_bg1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_margin="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="130.0dip" android:layout_height="fill_parent">
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_setting_player" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/players" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Spinner android:textColor="@android:color/black" android:id="@id/spn_setting_player" android:background="@drawable/main_but_select" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:spinnerMode="dropdown" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/menu_bg1" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_margin="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="130.0dip" android:layout_height="fill_parent">
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_setting_language" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/language" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Spinner android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/spn_setting_language" android:background="@drawable/main_but_select" android:paddingLeft="@dimen/spn_padding_left" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/spn_height" android:spinnerMode="dropdown" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/SaveBtn" android:background="@drawable/main_but_select" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Save" android:layout_weight="1.0" />
+                <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/ResBtn" android:background="@drawable/main_but_select" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Reset" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

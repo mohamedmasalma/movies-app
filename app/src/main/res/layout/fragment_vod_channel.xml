@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/package_bg" android:layout_width="@dimen/pac_width" android:layout_height="fill_parent">
+            <ImageView android:background="@drawable/vod" android:layout_width="@dimen/pac_width" android:layout_height="@dimen/type_img_height" android:layout_marginTop="@dimen/basic_margin_top" />
+            <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/basic_margin_top" android:layout_weight="1.0">
+                <RadioGroup android:orientation="vertical" android:id="@id/movie_package_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </ScrollView>
+        </LinearLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <GridView android:id="@id/movie_list" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/basic_margin_top" android:listSelector="@drawable/channel_item_selector" android:verticalSpacing="@dimen/gv_vertical_spacing" android:stretchMode="spacingWidthUniform" android:columnWidth="@dimen/gv_column_width" android:numColumns="@integer/num_columns" />
+            <include layout="@layout/empty_msg_common" />
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/loading_common" />
+</FrameLayout>

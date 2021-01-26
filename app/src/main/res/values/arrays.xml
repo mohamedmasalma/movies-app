@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="countrys">
+        <item>English</item>
+        <item>Arabic</item>
+        <item>India</item>
+        <item>Spanish</item>
+        <item>Germany</item>
+        <item>French</item>
+    </string-array>
+    <string-array name="countrys_code">
+        <item>en</item>
+        <item>ar</item>
+        <item>it</item>
+        <item>es</item>
+        <item>de</item>
+        <item>fr</item>
+        <item>iw</item>
+    </string-array>
+    <string-array name="countrys_code_korea">
+        <item>en</item>
+        <item>ko</item>
+        <item>it</item>
+        <item>es</item>
+        <item>de</item>
+        <item>fr</item>
+        <item>ar</item>
+        <item>zh</item>
+    </string-array>
+    <string-array name="countrys_korea">
+        <item>English</item>
+        <item>Korean</item>
+        <item>India</item>
+        <item>Spanish</item>
+        <item>Germany</item>
+        <item>French</item>
+        <item>Arabic</item>
+        <item>Chinese</item>
+    </string-array>
+    <string-array name="players">
+        <item>ExoPlayer</item>
+        <item>VLC</item>
+    </string-array>
+</resources>

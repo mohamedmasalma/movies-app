@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/package_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="25.0sp" android:gravity="center" android:id="@id/textView5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="16.0dip" android:text="Reset App" />
+    <TextView android:textSize="25.0sp" android:gravity="center" android:id="@id/textView6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Are you sure you want to reset!" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/cncl" android:background="@drawable/button_color_bg" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Cancel" android:layout_weight="1.0" />
+        <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/restBtn" android:background="@drawable/button_color_bg" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Reset" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/gudie_bg" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/navigation_content" android:layout_width="fill_parent" android:layout_height="@dimen/lny_top_bar_height">
+        <RadioGroup android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/tabbar" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/rg_top_min_height" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/top_tips_msg_size" android:textColor="@color/radio_button_check" android:ellipsize="marquee" android:gravity="center" android:id="@id/top_tips" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/top_tips_msg_margin_left" android:text="@string/tips1" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+    <TextView android:id="@id/tab_line" android:background="#ffb2b2b2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/navigation_content" />
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/navigation_content" />
+</RelativeLayout>

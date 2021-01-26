@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/channel_item_padding_top" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/chnl_menu" android:visibility="visible" android:layout_width="@dimen/fav_img_width" android:layout_height="@dimen/fav_img_height" android:src="@drawable/fav3" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/chnl_fav" android:visibility="visible" android:layout_width="@dimen/fav_img_width" android:layout_height="@dimen/fav_img_height" android:src="@drawable/fav3" />
+        <TextView android:textSize="@dimen/channel_name_size" android:textColor="@color/active_color" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/chnl_name" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/fav_img_height" android:text="MBC1" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+</RelativeLayout>

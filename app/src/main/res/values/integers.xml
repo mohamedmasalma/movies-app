@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="app_bg_num_columns">7</integer>
+    <integer name="num_columns">3</integer>
+    <integer name="rg_pac_item_margin">3</integer>
+    <integer name="theme_bg_num_columns">5</integer>
+    <integer name="top_bar_img_height">30</integer>
+    <integer name="top_bar_img_padding_hor">20</integer>
+    <integer name="top_bar_img_padding_ver">10</integer>
+    <integer name="top_bar_img_width">30</integer>
+    <integer name="top_bar_rg_margin">5</integer>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+</resources>
